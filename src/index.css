@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply antialiased text-gray-900 overscroll-none;
+}
+
+.rdp {
+  --rdp-cell-size: 40px;
+  margin: 0;
+  width: 100%;
+}
+
+.rdp-months {
+  justify-content: stretch;
+}
+
+.rdp-month {
+  width: 100%;
+}
+
+.rdp-table {
+  width: 100%;
+  max-width: none;
+}
+
+.rdp-head_cell {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #6b7280;
+  padding-bottom: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .rdp {
+    --rdp-cell-size: 36px;
+    font-size: 14px;
+  }
+}
